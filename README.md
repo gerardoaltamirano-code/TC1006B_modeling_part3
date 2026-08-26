@@ -46,7 +46,7 @@ category_names = {
 }
 df["week"] = pd.to_datetime(df["week"])
 df["year"] = df["week"].dt.year
-df["category_name"] = df["category"].map(category_names)
+df["category"] = df["category"].map(category_names)
 df.info()
 ```
 
